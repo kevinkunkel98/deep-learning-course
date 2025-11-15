@@ -2,7 +2,33 @@
 
 ## Setup
 
-Das Python Virtual Environment wurde bereits erstellt und alle erforderlichen Pakete sind installiert.
+### Automatische Installation
+
+Führe das Setup-Skript aus:
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+### Manuelle Installation
+
+Falls das automatische Setup nicht funktioniert:
+
+1. **Virtual Environment erstellen:**
+   ```bash
+   python3 -m venv venv
+   ```
+
+2. **Virtual Environment aktivieren:**
+   ```bash
+   source venv/bin/activate
+   ```
+
+3. **Pakete installieren:**
+   ```bash
+   pip install --upgrade pip
+   pip install -r requirements.txt
+   ```
 
 ## Verwendung
 
@@ -31,6 +57,9 @@ deactivate
 - scikit-image
 - numpy
 - jupyterlab
+- torch (PyTorch)
+- torchvision
+- torchaudio
 
 ## Ordnerstruktur
 - `course/` - Kursunterlagen und Hausaufgaben

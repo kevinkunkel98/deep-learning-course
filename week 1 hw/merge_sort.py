@@ -29,3 +29,9 @@ def merge_sort(arr):
             k += 1
 
     return arr
+
+if __name__ == "__main__":
+    sample_array = [48, 37, 23, 5, 7, 72, 10]
+    sorted_array = merge_sort(sample_array)
+    print("Original array:", sample_array)
+    print("Sorted array:", sorted_array)

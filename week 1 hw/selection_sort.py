@@ -1,3 +1,5 @@
+sample_array = [64, 25, 12, 22, 11]
+
 def selection_sort(arr):
     n = len(arr)
     for i in range(n):
@@ -9,7 +11,6 @@ def selection_sort(arr):
     return arr
 
 if __name__ == "__main__":
-    sample_array = [64, 25, 12, 22, 11]
     sorted_array = selection_sort(sample_array)
-    print("Original array:", sample_array)
-    print("Sorted array:", sorted_array)
+    print("original array:", sample_array)
+    print("sorted array:", sorted_array)

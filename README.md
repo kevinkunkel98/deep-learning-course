@@ -1,60 +1,79 @@
-# Deep Learning Course - Hausaufgabe W1
+# Deep Learning Course
 
-## Setup
+Dieses Repository enthält Materialien, Hausaufgaben und Projekte für den Deep Learning Kurs.
 
-### Automatische Installation
+## 🚀 Schnellstart
 
-Führe das Setup-Skript aus:
+### 1. Erstmalige Installation
+
 ```bash
-chmod +x setup.sh
 ./setup.sh
 ```
 
-### Manuelle Installation
+Dieses Skript erstellt automatisch ein virtuelles Python-Environment und installiert alle Abhängigkeiten.
 
-Falls das automatische Setup nicht funktioniert:
+### 2. Environment aktivieren
 
-1. **Virtual Environment erstellen:**
-   ```bash
-   python3 -m venv venv
-   ```
-
-2. **Virtual Environment aktivieren:**
-   ```bash
-   source venv/bin/activate
-   ```
-
-3. **Pakete installieren:**
-   ```bash
-   pip install --upgrade pip
-   pip install -r requirements.txt
-   ```
-
-## Verwendung
-
-### Virtual Environment aktivieren
 ```bash
 source venv/bin/activate
 ```
 
-### JupyterLab starten
+Oder verwende das Aktivierungsskript:
 ```bash
-jupyter-lab
+source activate_env.sh
 ```
 
-### Python-Skripte ausführen
-```bash
-python3 dein_skript.py
-```
+### 3. Environment deaktivieren
 
-### Virtual Environment deaktivieren
 ```bash
 deactivate
 ```
 
-## Installierte Pakete
-- matplotlib
-- scikit-image
+## 📦 Installierte Pakete
+
+- **PyTorch**: 2.9.1
+- **TorchVision**: 0.24.1
+- **TorchAudio**: 2.9.1
+- **NumPy**: 2.3.4
+- **Matplotlib**: 3.10.7
+- **Scikit-image**: 0.25.2
+- **JupyterLab**: 4.4.9
+
+## 📁 Projektstruktur
+
+```
+.
+├── week 1 hw/          # Hausaufgaben Woche 1
+├── week 2 hw/          # Hausaufgaben Woche 2
+├── course/             # Kursmaterialien und Aufgabenstellungen
+├── slides/             # Vorlesungsfolien
+├── venv/               # Virtuelles Python-Environment (nicht in Git)
+├── requirements.txt    # Python-Abhängigkeiten
+├── setup.sh           # Installations-Skript
+└── activate_env.sh    # Aktivierungs-Skript
+```
+
+## 💻 Verwendung
+
+### FMNIST Training ausführen
+
+```bash
+source venv/bin/activate
+python "FMNIST PyTorch LogReg Class.py"
+```
+
+### JupyterLab starten
+
+```bash
+source venv/bin/activate
+jupyter-lab
+```
+
+## 💡 Tipps
+
+- Das `venv/` Verzeichnis ist in `.gitignore` eingetragen und wird nicht versioniert
+- Bei jedem neuen Terminal-Fenster muss das Environment neu aktiviert werden
+- Alle Python-Skripte sollten im aktivierten Environment ausgeführt werden
 - numpy
 - jupyterlab
 - torch (PyTorch)
